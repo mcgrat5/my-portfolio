@@ -1,3 +1,4 @@
+/* Style of Web Page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,23 +7,87 @@ body {
     text-align: center;
 }
 
+/* Enable flexible layout */
 header {
     background: #F56600;
     color: white;
     padding: 20px;
+    position: relative;
 }
 
+/* Menu button */
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+}
+
+/* Make navigation mobile friendly */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
 nav a {
-    margin: 0 15px;
+    margin: 10px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
+/* Section section */
 section {
-    margin: 30px;
+    margin: 20px auto;
     padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+/* Mobile-friendly */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background: #F56600;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        color: white;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    body {
+        font-size: 16px;
+    }
 }

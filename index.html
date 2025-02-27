@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name=""viewport content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
         <h1>Connor McGrath</h1>
         <p>Data Scientist | Passions, exp | Open to work!</p>
     </header>
@@ -26,5 +27,11 @@
     <footer>
         <p>&copy; 2025 Connor McGrath. All Rights Reserved</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("nav-links").classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
