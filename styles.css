@@ -102,6 +102,16 @@ section {
     opacity: 0.8;
 }
 
+/* GitHub */
+.github-logo {
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.github-logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
 /* Button Section */
 .custom-btn {
     display: inline-flex;
