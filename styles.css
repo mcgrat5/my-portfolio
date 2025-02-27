@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: center;
     gap: 20px;
-    background-color: #522D80;
+    background-color: #522D80 !important;
     padding: 15px;
     list-style: none;
 }
@@ -48,7 +48,7 @@ nav {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #522D80;
+    background-color: #522D80 !important;
 }
 
 /* Menu button */
@@ -91,6 +91,13 @@ section {
 }
 
 /* Social Media */
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 10px;
+}
 
 /* LinkedIn */
 .linkedin-logo {
