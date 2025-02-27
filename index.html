@@ -6,6 +6,21 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const sections = document.querySelectorAll("section");
+
+        const observer = new IntersectionObserverEntry(entries => {
+            entries.forEach(entry => {
+                if (entry.Intersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        });
+    });
+</script>
+
 <body>
     <header>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
