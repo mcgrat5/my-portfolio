@@ -13,11 +13,15 @@
 
         const observer = new IntersectionObserverEntry(entries => {
             entries.forEach(entry => {
-                if (entry.Intersecting) {
+                if (entry.isIntersecting) {
                     entry.target.classList.add("show");
                 }
             });
-        });
+        }, { threshold: 0.2 });
+
+        sections.forEach(sections => {
+            observer.observe(section);
+        })
     });
 </script>
 
