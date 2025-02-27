@@ -54,6 +54,16 @@ section {
     max-width: 800px;
 }
 
+/* Social Media */
+.linkedin-logo {
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.linkedin-logo:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
 /* Mobile-friendly */
 @media (max-width: 768px) {
     nav {
