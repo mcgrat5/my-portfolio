@@ -61,7 +61,7 @@ nav {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: white;
+    color: #522D80;
 }
 
 /* Make navigation mobile friendly */
@@ -92,9 +92,10 @@ section {
 
 /* Social Media */
 
-/* LinedIn */
+/* LinkedIn */
 .linkedin-logo {
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    margin-right: 20px;
 }
 
 .linkedin-logo:hover {
@@ -105,6 +106,7 @@ section {
 /* GitHub */
 .github-logo {
     transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    margin-left: 20px;
 }
 
 .github-logo:hover {
