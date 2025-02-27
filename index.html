@@ -7,24 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const sections = document.querySelectorAll("section");
-
-        const observer = new IntersectionObserverEntry(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                }
-            });
-        }, { threshold: 0.2 });
-
-        sections.forEach(sections => {
-            observer.observe(section);
-        })
-    });
-</script>
-
 <body>
     <header>
         <button class="menu-btn" onclick="toggleMenu()">☰</button>
@@ -63,6 +45,24 @@
     <footer>
         <p>&copy; 2025 Connor McGrath. All Rights Reserved</p>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+    
+            const observer = new IntersectionObserverEntry(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("show");
+                    }
+                });
+            }, { threshold: 0.2 });
+    
+            sections.forEach(section => {
+                observer.observe(section);
+            })
+        });
+    </script>
 
     <script>
         function toggleMenu() {
