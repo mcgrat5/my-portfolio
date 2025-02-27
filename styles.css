@@ -90,6 +90,46 @@ section {
     max-width: 800px;
 }
 
+/* Project Section */
+.project-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #522D80;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    color: #7645AB
+}
+
 /* Social Media */
 .social-links {
     display: flex;
@@ -119,11 +159,6 @@ section {
 .github-logo:hover {
     transform: scale(1.1);
     opacity: 0.8;
-}
-
-.linkedin-logo, .github-logo {
-    width: 50px;
-    border: 2px solid red; /* Add a red border to see if the image is missing */
 }
 
 /* Button Section */
